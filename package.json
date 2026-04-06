@@ -1,0 +1,21 @@
+{
+  "name": "sentra-ai",
+  "version": "1.0.0",
+  "description": "OpenAI-compatible API server wrapping MAGI Council agents via AWS Bedrock",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "fastify": "^5.3.3",
+    "@fastify/cors": "^11.0.0",
+    "@aws-sdk/client-bedrock-runtime": "^3.800.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
