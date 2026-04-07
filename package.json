@@ -1,10 +1,11 @@
 {
   "name": "sentra-ai",
   "version": "1.0.0",
-  "description": "Terminal AI assistant powered by the MAGI Council — chat with Sentra AI agents from the CLI",
+  "description": "Terminal AI assistant powered by the MAGI Council \u2014 chat with Sentra AI agents from the CLI",
   "type": "module",
   "main": "cli.js",
   "bin": {
+    "magi": "./cli.js",
     "sentra": "./cli.js"
   },
   "keywords": [

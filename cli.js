@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// Sentra AI CLI — Talk to MAGI Council agents from the terminal
+// MAGI CLI — Talk to MAGI Council agents from the terminal
 // Pure Node.js, zero dependencies. Requires Node 18+.
 
 import { createInterface } from 'node:readline';
@@ -73,7 +73,7 @@ function parseArgs(args) {
 
 function printHelp() {
   console.log(`
-${BOLD}${CYAN}🧠 Sentra AI${RESET} — MAGI Council CLI
+${BOLD}${CYAN}🧠 MAGI${RESET} — MAGI Council CLI
 
 ${BOLD}USAGE${RESET}
   sentra ${DIM}"your question"${RESET}                  Ask the default agent
@@ -106,7 +106,7 @@ ${BOLD}ENVIRONMENT${RESET}
 }
 
 function printVersion() {
-  console.log('sentra-ai v1.0.0');
+  console.log('magi-cli v1.0.0');
 }
 
 // ─── Streaming API Call ──────────────────────────────────────────────────────
@@ -207,7 +207,7 @@ async function interactiveMode(initialAgent) {
   const history = [];
 
   console.log(`
-${BOLD}${CYAN}🧠 Sentra AI${RESET} — Connected to MAGI Council
+${BOLD}${CYAN}🧠 MAGI${RESET} — Connected to MAGI Council
 ${DIM}Agent: ${agent.color}${agent.emoji} ${agent.name}${RESET} ${DIM}| Type ${GREEN}/help${RESET}${DIM} for commands${RESET}
 `);
 
