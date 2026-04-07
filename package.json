@@ -1,21 +1,24 @@
 {
   "name": "sentra-ai",
   "version": "1.0.0",
-  "description": "OpenAI-compatible API server wrapping MAGI Council agents via AWS Bedrock",
+  "description": "Terminal AI assistant powered by the MAGI Council — chat with Sentra AI agents from the CLI",
   "type": "module",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "node --watch server.js"
+  "main": "cli.js",
+  "bin": {
+    "sentra": "./cli.js"
   },
-  "dependencies": {
-    "fastify": "^5.3.3",
-    "@fastify/cors": "^11.0.0",
-    "@aws-sdk/client-bedrock-runtime": "^3.800.0"
-  },
+  "keywords": [
+    "ai",
+    "cli",
+    "magi",
+    "sentra",
+    "council",
+    "chat",
+    "terminal"
+  ],
+  "author": "DataFlow",
+  "license": "MIT",
   "engines": {
     "node": ">=18.0.0"
-  },
-  "license": "UNLICENSED",
-  "private": true
+  }
 }

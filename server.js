@@ -640,7 +640,7 @@ app.setErrorHandler((error, request, reply) => {
 // ── Start ───────────────────────────────────────────────────────────────────
 
 try {
-  await app.listen({ port: PORT, host: '0.0.0.0' })
+  await app.listen({ port: PORT, host: '127.0.0.1' })
   console.log(`
 ╔═══════════════════════════════════════════╗
 ║          🧠  Sentra AI  v1.0.0           ║
