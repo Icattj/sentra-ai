@@ -8,8 +8,8 @@ import { stdin, stdout, stderr, argv, env, exit } from 'node:process';
 
 // ─── Config ──────────────────────────────────────────────────────────────────
 
-const API_URL = env.SENTRA_API_URL || 'http://127.0.0.1:3005/v1/chat/completions';
-const API_KEY = env.SENTRA_API_KEY || 'sk-sentra-magi-2026';
+const API_URL = env.MAGI_API_URL || env.MAGI_API_URL || 'http://127.0.0.1:3005/v1/chat/completions';
+const API_KEY = env.MAGI_API_KEY || env.MAGI_API_KEY || 'sk-sentra-magi-2026';
 
 // ─── Agent Registry ──────────────────────────────────────────────────────────
 
@@ -100,8 +100,8 @@ ${BOLD}EXAMPLES${RESET}
   sentra -i
 
 ${BOLD}ENVIRONMENT${RESET}
-  SENTRA_API_KEY    API key (default: sk-sentra-magi-2026)
-  SENTRA_API_URL    API endpoint (default: http://127.0.0.1:3005/v1/chat/completions)
+  MAGI_API_KEY    API key (default: sk-sentra-magi-2026)
+  MAGI_API_URL    API endpoint (default: http://127.0.0.1:3005/v1/chat/completions)
 `);
 }
 
